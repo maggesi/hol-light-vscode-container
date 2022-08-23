@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# export HOLLIGHT_DIR=/home/vscode/hol-light
+# cd ~/hol-light
+exec ocaml -I "$(camlp5 -where)" -init "${HOLLIGHT_DIR}/hol.ml"
